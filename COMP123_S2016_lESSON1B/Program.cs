@@ -11,17 +11,20 @@ using System.Threading.Tasks;
  * 
  * Discruption: This program demonstrate Github control and vision contro
  *best practicse
- *Version: 0.4 - Extracts output outputStringtoconsole From GetuserName Method
+ *Version: 0.6 -  refracted using the ternary operator
+ */
 
 
 namespace COMP123_S2016_lESSON1B
-{
     /**
      * This is the driver class of our program
      * 
      * @class Program
      */
-    class Program
+
+
+
+public  class Program
     {
         /**
          * Main method for class of our program
@@ -41,23 +44,25 @@ namespace COMP123_S2016_lESSON1B
          * @return {String} UserName
          * */
         public static string GetUserName()
-        {// initalize variable
+        
+        {
+       // initalize variable
             string UserName = "";
              OutPutStringConsole("Enter User Name");
             UserName = Console.ReadLine();
 
-            Console.WriteLine("\==================================");
+            Console.WriteLine("/=========================");
             Console.WriteLine("You Entered:" + UserName);
             return UserName;
         }
         /**
          * This method Writes a string to console
-         * 
+         * chooseto add 
          */
 
-private static string OutPutStringConsole(string outputString,bool hasNewLine)
+public static string OutPutStringConsole(string outputString,bool hasNewLine)
 {
-        if(hasNewLine)
+      /**f(hasNewLine)
         {
     Console.Write(outputString);
         }
@@ -66,7 +71,10 @@ private static string OutPutStringConsole(string outputString,bool hasNewLine)
         {
             Console.WriteLine(outputString);
         }
-          return outputString;
+       */
+         // refracted using the ternary operator
+    string suffixString = hasNewLine ? "\n" : "";
+    Console.Write(outputString+suffixString);
+    return outputString;
 }
     }
-}
