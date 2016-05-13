@@ -11,8 +11,7 @@ using System.Threading.Tasks;
  * 
  * Discruption: This program demonstrate Github control and vision contro
  *best practicse
- *Version: 0.2- Added GetusreName method
-*/
+ *Version: 0.4 - Extracts output outputStringtoconsole From GetuserName Method
 
 
 namespace COMP123_S2016_lESSON1B
