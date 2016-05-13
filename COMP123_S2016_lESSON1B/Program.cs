@@ -17,11 +17,22 @@ using System.Threading.Tasks;
 
 namespace COMP123_S2016_lESSON1B
 {
+    /**
+     * This is the driver class of our program
+     * 
+     * @class Program
+     */
     class Program
     {
+        /**
+         * Main method for class of our program
+         * 
+         * @class program
+         * @construct main
+         */
         static void Main(string[] args)
         {
-            GetUserName();         
+            GetUserName();
         }
 
         /**
@@ -30,14 +41,33 @@ namespace COMP123_S2016_lESSON1B
          * @method GetUSer Name
          * @return {String} UserName
          * */
- public static string GetUserName() 
-   {// initalize variable
+        public static string GetUserName()
+        {// initalize variable
             string UserName = "";
-            Console.Write("Enter User Name");
+             OutPutStringConsole("Enter User Name");
             UserName = Console.ReadLine();
 
-            Console.WriteLine("/n===========");
-            Console.WriteLine("You Entered:" + UserName);}
-} 
+            Console.WriteLine("\==================================");
+            Console.WriteLine("You Entered:" + UserName);
+            return UserName;
+        }
+        /**
+         * This method Writes a string to console
+         * 
+         */
 
+private static string OutPutStringConsole(string outputString,bool hasNewLine)
+{
+        if(hasNewLine)
+        {
+    Console.Write(outputString);
+        }
+    
+        else
+        {
+            Console.WriteLine(outputString);
+        }
+          return outputString;
+}
+    }
 }
