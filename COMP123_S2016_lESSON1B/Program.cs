@@ -11,7 +11,8 @@ using System.Threading.Tasks;
  * 
  * Discruption: This program demonstrate Github control and vision contro
  *best practicse
- * /
+ *Version: 0.2- Added GetusreName method
+*/
 
 
 namespace COMP123_S2016_lESSON1B
@@ -20,6 +21,23 @@ namespace COMP123_S2016_lESSON1B
     {
         static void Main(string[] args)
         {
+            GetUserName();         
         }
-    }
+
+        /**
+         * This method Read User name From Console
+         * 
+         * @method GetUSer Name
+         * @return {String} UserName
+         * */
+ public static string GetUserName() 
+   {// initalize variable
+            string UserName = "";
+            Console.Write("Enter User Name");
+            UserName = Console.ReadLine();
+
+            Console.WriteLine("/n===========");
+            Console.WriteLine("You Entered:" + UserName);}
+} 
+
 }
